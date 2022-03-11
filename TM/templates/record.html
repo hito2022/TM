@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <tr>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Start Time</th>
+        <th>Finish Time</th>
+        <th>Time</th>
+    </tr>
+    <br>
+    {% for row in record %}
+        <td>{{row.name}}</td>
+        <td>{{row.course}}</td>
+        <td>{{row.start_time}}</td>
+        <td>{{row.finish_time}}</td>
+        <td>{{row.time_minute}}</td>
+    {% endfor%}
+</body>
+</html>
